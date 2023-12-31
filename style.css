@@ -9,10 +9,33 @@
     font-family: Raleway;
 }
 
+@media screen and (max-width:768) {
+    .header-section{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+@media screen and (max-width:768){
+   .section-2 img {
+    margin-top: 80px; 
+  }
+
+  .section-2 p {
+    font-size: 13px; 
+    width: 90%; 
+    margin: 0 auto; 
+    margin-top: 30px; 
+    font-weight: normal;  
+    color: #000000; 
+    padding-bottom: 80px; 
+  }
+}
 .header-section{
     background-color: #1a1a1a;
     padding: 20px 0;
 }
+
 .logo-section{
     width: 60%;
     position: relative;
@@ -63,15 +86,18 @@
 }
 
 .section-2{
-    text-align: center;
     background-color: #ffffff;
 }
 .section-2 img{
     margin-top: 165px;
 }
+.section-2 .section-2-p-img{
+    margin: 0 auto;
+    text-align: center;
+}
 .section-2 p{
+    line-height: 2.3;
     font-size: 15px;
-    width: 585px;
     margin: 0 auto;
     margin-top: 90px;
     font-weight: bold;
@@ -356,6 +382,15 @@
         align-items: center;
         margin-bottom: 110px;
     }
+
+    .section-5-categories .category{
+        display: flex;
+        width: 100px;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+   
 }
 .section-5-categories .category{
     border-top: 1px solid #6f6f6f;
@@ -498,6 +533,13 @@
     gap: 30px;
 }
 
+@media screen and (max-width:768px) {
+    .section-7-cards{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
 
 .section-7-cards .section-7-card{
     display: flex;
@@ -568,6 +610,11 @@
     margin-bottom: 25px;
 }
 
+@media screen and (max-width:768px) {
+    .section-7-yellow-border-fix{
+        visibility: collapse;
+    }
+}
 .section-7-yellow-border-fix .section-7-left-card {
     background-color: #1a1a1a;
     width: 571px;
@@ -650,7 +697,6 @@
 .footer-section{
     background-color: #1a1a1a;
     margin-top: 280px;
-    height: 387px;
 }
 
 footer{
@@ -683,7 +729,6 @@ footer .copyright{
 }
 .footer-second-items{
     margin-top: 88px;
-    align-items: center;
     margin-right: 80px;
 }
 
@@ -706,7 +751,6 @@ footer a{
 footer .right-section{
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
     margin-top: 88px;
 }
 
@@ -732,4 +776,12 @@ footer .right-section a{
     width: 25px;
     display: flex;
     gap: 13px;
+}
+
+@media screen and (max-width:768px) {
+    footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
