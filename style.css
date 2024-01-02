@@ -530,6 +530,7 @@
 .section-7-cards{
     display: flex ;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -537,7 +538,8 @@
     .section-7-cards{
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        width:80%;
+
     }
 }
 
@@ -581,7 +583,6 @@
     background-color: #ffe500;
     height: 210px;
     gap: 30px;
-    position: relative;
     display: flex;
     justify-content: center;
 }
